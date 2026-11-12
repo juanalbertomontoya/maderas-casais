@@ -16,12 +16,12 @@
    No se copian el encabezado, pie ni dependencias de WordPress. */
 @font-face {
   font-family:"DejavuSans MC";
-  src:url("https://maderas.seolifeteam.com/wp-content/uploads/2026/10/DejaVuSans.woff2") format("woff2");
+  src:url("./DejaVuSans.woff2") format("woff2");
   font-weight:400; font-style:normal; font-display:swap;
 }
 @font-face {
   font-family:"DejavuSans MC";
-  src:url("https://maderas.seolifeteam.com/wp-content/uploads/2026/10/DejaVuSans-Bold.woff2") format("woff2");
+  src:url("./DejaVuSans-Bold.woff2") format("woff2");
   font-weight:700; font-style:normal; font-display:swap;
 }
 :root { --mc-text:#242424;--mc-gray:#666;--mc-border:#a8a8a8;--mc-muted:#e7e7e7;--mc-line:#dfdfdf;--mc-black:#202020;--mc-pending:#8f2035; color-scheme:light; }
@@ -189,6 +189,14 @@ a{color:inherit}
  .mc-dialog{padding-left:10px;padding-right:10px}
 }
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+
+/* Tipografía oficial Maderas Casais: DejaVuSans regular y bold. */
+:root{--mc-font:"DejavuSans MC",Arial,sans-serif}
+html,body,button,input,select,textarea,option,
+.mc-wrap,.mc-dialog,.mc-dialog *, .mc-card,.mc-card *, .mc-selector,
+.mc-category,.mc-tab,.mc-tech-link,.mc-official,.mc-official-primary{
+  font-family:var(--mc-font) !important;
+}
 </style>
 </head>
 <body>
